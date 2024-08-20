@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e6a87997-6259-ef11-bfe3-002248202486}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{7d7dc394-4759-4eb3-b975-49aa2988057b}" IsUserDefined="1" name="New Tab" labelid="{9561df5c-9a4f-4b2f-82dd-8f734de1f1e9}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{cfe27c6f-f50e-4fb2-8fea-b6139d7f8049}" name="New Section" labelid="{b44c28d2-eeff-4c14-a594-ea7a2c9c3e9a}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{00a827fa-216f-483e-96e0-d4b7b99c7268}" showlabel="true" locklevel="0" labelid="{fac85a7c-05d5-40a3-8101-0adebcd40b4d}">
+                        <labels>
+                          <label description="GITHUB_Demo" languagecode="1033" />
+                        </labels>
+                        <control id="new_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="new_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5d1bc5f2-f73b-4e5b-a36a-29087b2433c4}" locklevel="0" colspan="1" rowspan="1" labelid="{ca035863-6e8a-45dd-a849-e6e3aa4adc58}">
+                        <labels>
+                          <label description="GitHub Solution Name" languagecode="1033" />
+                        </labels>
+                        <control id="new_githubsolutionname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="new_githubsolutionname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9cc2234a-7119-4225-91b6-255ddf686fec}" locklevel="0" colspan="1" rowspan="1" labelid="{c79f2410-1842-454f-bd53-ab9717ab565e}">
+                        <labels>
+                          <label description="GitHub Solution version" languagecode="1033" />
+                        </labels>
+                        <control id="new_githubsolutionversion" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="new_githubsolutionversion" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{62b519c0-daaf-447b-91c0-45a18b2c4b67}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="new_github_history" languagecode="1033" />
+                        </labels>
+                        <control id="new_github_history" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="new_github_history" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3949e370-9ec4-4426-a8c7-e8b7b4a02f06}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0c5f7300-2883-45d9-910d-bcdda61def32}" locklevel="0" colspan="1" rowspan="1" labelid="{fafc2625-dd56-40fe-9590-3b1b0b0c1db7}">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{713d672c-4728-4919-8863-d32a45376233}" locklevel="0" colspan="1" rowspan="1" labelid="{76b0a753-0fd1-443e-8a4a-41000055e194}">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{29ef98ff-1f4b-4121-823d-f42301303e20}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ad60056d-f4ac-41c2-a8e8-60efa619c5ee}" showlabel="false" labelid="{5a4af0e5-0525-4e69-9f12-01352d7509f3}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f91b5d38-f744-4e55-a355-b9c3b1b4cb6f}" showlabel="false" labelid="{a3ef9f73-2cd7-47d9-b0e8-1336b7ab765b}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{cc807e38-1c94-4584-a090-23118a1e0b89}" showlabel="false" labelid="{28ed6eee-8ebd-483c-81b2-47fda0188e36}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{acf02d78-64ba-4deb-ab03-aadcd62cd725}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{580caa19-75d8-4b2b-af41-a004892b7531}" showlabel="false" labelid="{442231f7-5b9d-48c2-915d-0a168cbffc0b}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f3777876-9b75-4dba-8784-7a9ebb6aac8c}" showlabel="false" labelid="{b063e03a-2171-410a-9902-0b01c4b3fa4b}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7e0607a3-f5f3-4519-929e-5590511bcfbc}" showlabel="false" labelid="{9518cee6-f8f5-41aa-b6ab-67d13b9b7854}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Demo_GitHub main form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>
