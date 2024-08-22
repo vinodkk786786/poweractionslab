@@ -39,11 +39,12 @@ jobs:
 
       - name: Authenticate with Power Platform
         run: |
+          ENV_URL=$(printf '%s_ENV_URL' "${{ matrix.environment | toUpper }}")
           pac auth create \
-            --url $(format('{0}_ENV_URL', matrix.environment.toUpperCase())) \
-            --clientId ${{ secrets.CLIENT_ID }} \
-            --tenant ${{ secrets.TENANT_ID }} \
-            --clientSecret ${{ secrets.CLIENT_SECRET }}
+            --url "${{ secrets[ENV_URL] }}" \
+            --clientId "${{ secrets.CLIENT_ID }}" \
+            --tenant "${{ secrets.TENANT_ID }}" \
+            --clientSecret "${{ secrets.CLIENT_SECRET }}"
 
        
       - name: Export Solution from Development
