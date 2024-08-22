@@ -40,10 +40,10 @@ jobs:
       - name: Authenticate with Power Platform
         run: |
           pac auth create \
-            --secrets[format('{0}_ENV_URL', matrix.environment.toUpperCase())] \
-            --clientId $CLIENT_ID \
-            --tenant $TENANT_ID \
-            --clientSecret $CLIENT_SECRET
+            --url $(format('{0}_ENV_URL', matrix.environment.toUpperCase())) \
+            --clientId ${{ secrets.CLIENT_ID }} \
+            --tenant ${{ secrets.TENANT_ID }} \
+            --clientSecret ${{ secrets.CLIENT_SECRET }}
 
        
       - name: Export Solution from Development
