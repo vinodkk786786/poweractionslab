@@ -40,11 +40,12 @@ jobs:
       - name: Authenticate with Power Platform
         run: |
           pac auth create \
-            --secrets[format('{0}_ENV_URL', matrix.environment.toUpperCase())]\
+            --secrets[format('{0}_ENV_URL', matrix.environment.toUpperCase())] \
             --clientId $CLIENT_ID \
             --tenant $TENANT_ID \
             --clientSecret $CLIENT_SECRET
 
+       
       - name: Export Solution from Development
         if: matrix.environment == 'development'
         run: |
