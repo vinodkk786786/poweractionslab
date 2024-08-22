@@ -1,0 +1,72 @@
+name: Deploy Power Platform Solution
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment to production on the main branch
+      - dev   # Trigger deployment to testing on the dev branch
+
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target environment'
+        required: true
+        type: choice
+        options:
+          - development
+          - testing
+          - production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        environment: [development, testing, production]
+
+    env:
+      CLIENT_ID: ${{ secrets.CLIENT_ID }}
+      TENANT_ID: ${{ secrets.TENANT_ID }}
+      CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Power Platform CLI
+        run: npm install -g pac-cli
+
+      - name: Authenticate with Power Platform
+        run: |
+          pac auth create \
+            --url ${{ secrets[format('{0}_ENV_URL', matrix.environment | toUpperCase())] }} \
+            --clientId $CLIENT_ID \
+            --tenant $TENANT_ID \
+            --clientSecret $CLIENT_SECRET
+
+      - name: Export Solution from Development
+        if: matrix.environment == 'development'
+        run: |
+          pac solution export \
+            --path exported_solution.zip \
+            --name CustomerandProducts \
+            --output-format unmanaged
+
+      - name: Import Solution to Testing
+        if: matrix.environment == 'testing'
+        run: |
+          pac solution import \
+            --path exported_solution.zip \
+            --async
+
+      - name: Import Solution to Production
+        if: matrix.environment == 'production'
+        run: |
+          pac solution import \
+            --path exported_solution.zip \
+            --async
+
+      - name: Verify Import
+        run: |
+          pac solution list
