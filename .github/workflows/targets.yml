@@ -38,13 +38,7 @@ jobs:
         run: npm install -g pac-cli
 
       - name: Authenticate with Power Platform
-        run: |
-          ENV_URL=$(printf '%s_ENV_URL' "${{ matrix.environment | toUpper }}")
-          pac auth create \
-            --url "${{ secrets[ENV_URL] }}" \
-            --clientId "${{ secrets.CLIENT_ID }}" \
-            --tenant "${{ secrets.TENANT_ID }}" \
-            --clientSecret "${{ secrets.CLIENT_SECRET }}"
+        run: pac auth create --url ${{ secrets.ENV_URL }} --tenant ${{ secrets.TENANT_ID }} --client-id ${{ secrets.CLIENT_ID }} --client-secret ${{ secrets.CLIENT_SECRET }}
 
        
       - name: Export Solution from Development
