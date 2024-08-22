@@ -40,7 +40,7 @@ jobs:
       - name: Authenticate with Power Platform
         run: |
           pac auth create \
-            --url ${{ secrets[format('{0}_ENV_URL', matrix.environment | toUpperCase())] }} \
+            --secrets[format('{0}_ENV_URL', matrix.environment.toUpperCase())]
             --clientId $CLIENT_ID \
             --tenant $TENANT_ID \
             --clientSecret $CLIENT_SECRET
