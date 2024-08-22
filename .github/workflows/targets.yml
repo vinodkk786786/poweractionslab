@@ -44,17 +44,12 @@ jobs:
       - name: Export Solution from Development
         if: matrix.environment == 'development'
         run: |
-          pac solution export \
-            --path exported_solution.zip \
-            --name CustomerandProducts \
-            --output-format unmanaged
-
+          pac solution export --path ./.github/workflows/ --name CustomerandProducts --target managed --overwrite
+          
       - name: Import Solution to Testing
         if: matrix.environment == 'testing'
         run: |
-          pac solution import \
-            --path exported_solution.zip \
-            --async
+         pac solution import --path ./.github/workflows/CustomerandProducts.zip --overwrite-same-version --activate-plugins
 
       - name: Import Solution to Production
         if: matrix.environment == 'production'
