@@ -1,0 +1,26 @@
+name: Release Pipeline to QA/DevM/UAT/Prod
+# Call the reusable workflow release-solution-with-inputs.yml
+# Release your solution to prod when you create a new release.
+
+on:
+  release:
+      types: [created]        
+permissions:
+  contents: write
+jobs:
+  Release-solution-ALMLab:
+    uses: ./.github/workflows/release-solution-to-prod-with-inputs.yml
+    with:
+      #You can specify the solution name here
+      solution_name: ALI_G1
+      #Update your values here
+      BUILD_ENVIRONMENT_URL: https://dev-alii.crm.dynamics.com/
+      DVM_ENVIRONMENT_URL: https://dvm-alii.crm.dynamics.com/
+      QA_ENVIRONMENT_URL: https://qa-alii.crm.dynamics.com/
+      UAT_ENVIRONMENT_URL: https://uat-alii.crm.dynamics.com/
+      PRODUCTION_ENVIRONMENT_URL: https://prod-alii.crm.dynamics.com/
+      
+      CLIENT_ID: c9bfe35c-4011-4cea-a0b0-1d9aeb92158d
+      TENANT_ID: cf98c142-3126-40f8-be8d-bef563a8f7a5      
+    secrets:
+      envSecret: ${{ secrets.VINOD_SECRETID }}
