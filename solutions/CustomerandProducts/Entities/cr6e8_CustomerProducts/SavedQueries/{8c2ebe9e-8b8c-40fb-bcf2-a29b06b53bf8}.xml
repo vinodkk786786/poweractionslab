@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{8c2ebe9e-8b8c-40fb-bcf2-a29b06b53bf8}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr6e8_productname" select="1" icon="1" preview="1">
+        <row name="result" id="cr6e8_customerproductsid">
+          <cell name="cr6e8_productname" width="300" />
+          <cell name="cr6e8_productid" width="102" />
+          <cell name="cr6e8_producttype" width="115" />
+          <cell name="cr6e8_productprice" width="116" />
+          <cell name="cr6e8_productunits" width="118" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr6e8_customerproducts">
+          <attribute name="cr6e8_customerproductsid" />
+          <attribute name="cr6e8_productname" />
+          <order attribute="cr6e8_productname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr6e8_productid" />
+          <attribute name="cr6e8_producttype" />
+          <attribute name="cr6e8_productprice" />
+          <attribute name="cr6e8_productunits" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Customer Products" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

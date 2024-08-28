@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{02aa4665-1210-4610-b5b3-2b40f57e6b92}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{de93f5dd-9e38-4c63-99d7-5e2988659b2b}" IsUserDefined="1" name="Customer Details">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="true" showbar="false" IsUserDefined="0" id="{4cfedd30-f71e-413c-8271-a8c8548fa53b}" name="Customer Information">
+                  <labels>
+                    <label description="Customer Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{70636342-566d-44f0-a457-22ba55501f4f}">
+                        <labels>
+                          <label description="Customer Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr6e8_customername" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr6e8_customername" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{15dd3488-1c6e-431d-9a44-7bd0bc20a308}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Customer ID" languagecode="1033" />
+                        </labels>
+                        <control id="cr6e8_customerid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr6e8_customerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b35847f5-2aa2-482c-b201-14913cfc4dbf}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Customer Email" languagecode="1033" />
+                        </labels>
+                        <control id="cr6e8_customeremail" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr6e8_customeremail" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{69328324-dc0b-40d1-88be-e83d26efde77}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Customer Home Address" languagecode="1033" />
+                        </labels>
+                        <control id="cr6e8_customerhomeaddress" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr6e8_customerhomeaddress" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dafceeef-8f30-404f-acc4-f4e2b3eb8826}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Potential Customer" languagecode="1033" />
+                        </labels>
+                        <control id="cr6e8_potentialcustomer" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr6e8_potentialcustomer" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c52ae090-ce3e-4c29-97b3-d7aa1b957594}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Product Name" languagecode="1033" />
+                        </labels>
+                        <control id="cr6e8_productname" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="cr6e8_productname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0e1d161d-ad5d-49ed-8ced-b2fc0923c5a9}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{cb608f81-33d2-49f9-b7a3-0e90b587bdae}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{e2a7ab4e-0039-4343-8a1f-7e7ebb651c6e}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{0925df4d-2041-4952-a5a6-6188778440e7}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c219e8e5-27ee-4ea8-bdf5-ee10cf5c94a3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{08421d74-8604-4e3b-aa3e-4363f4f698a8}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{2c02120f-171e-4f4a-ab79-f837394959bc}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ba235e2e-cb00-4585-a406-d047538060df}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d2efd3fe-adb3-4353-b453-1cddc3c2dc0b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Customer Information Main Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

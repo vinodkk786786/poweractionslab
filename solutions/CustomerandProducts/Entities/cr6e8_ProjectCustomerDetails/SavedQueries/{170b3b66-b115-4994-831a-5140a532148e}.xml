@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{170b3b66-b115-4994-831a-5140a532148e}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr6e8_customername" select="1" icon="1" preview="1">
+        <row name="result" id="cr6e8_projectcustomerdetailsid">
+          <cell name="cr6e8_customername" width="300" />
+          <cell name="cr6e8_customerid" width="113" />
+          <cell name="cr6e8_customeremail" width="132" />
+          <cell name="cr6e8_customerphonenumber" width="183" />
+          <cell name="cr6e8_potentialcustomer" width="148" />
+          <cell name="cr6e8_customerhomeaddress" width="182" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr6e8_projectcustomerdetails">
+          <attribute name="cr6e8_projectcustomerdetailsid" />
+          <attribute name="cr6e8_customername" />
+          <order attribute="cr6e8_customername" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="cr6e8_customerid" />
+          <attribute name="cr6e8_customeremail" />
+          <attribute name="cr6e8_customerphonenumber" />
+          <attribute name="cr6e8_potentialcustomer" />
+          <attribute name="cr6e8_customerhomeaddress" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Project Customer Details" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
