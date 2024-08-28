@@ -69,7 +69,7 @@ jobs:
         solution-type: 'Unmanaged'
         overwrite-files: true
 
-    - name: branch-solution, prepare it for a PullRequest
+    - name: branch-solution, prepare it for a PullRequest # The Job will create the solution branch and prepare the pull request to merge solution branch into main branch
       uses: microsoft/powerplatform-actions/branch-solution@v0
       with:
         solution-folder: ${{ github.event.inputs.solution_folder}}/${{ github.event.inputs.solution_name }}
