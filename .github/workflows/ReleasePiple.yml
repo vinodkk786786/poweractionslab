@@ -20,7 +20,7 @@ jobs:
       UAT_ENVIRONMENT_URL: https://uat-alii.crm.dynamics.com/
       PRODUCTION_ENVIRONMENT_URL: https://prod-alii.crm.dynamics.com/
       
-      CLIENT_ID: c9bfe35c-4011-4cea-a0b0-1d9aeb92158d
-      TENANT_ID: cf98c142-3126-40f8-be8d-bef563a8f7a5      
+      CLIENT_ID: 00f217c4-7c6b-40a7-b395-488e05d3ee0a
+      TENANT_ID: d36301cc-6924-4762-a217-17ab64ba92ff      
     secrets:
       envSecret: ${{ secrets.VINOD_SECRETID }}
