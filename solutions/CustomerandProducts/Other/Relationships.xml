@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_cr6e8_customerproducts" />
+  <EntityRelationship Name="business_unit_cr6e8_projectcustomerdetails" />
+  <EntityRelationship Name="cr6e8_CustomerProducts_ProductName_cr6e8_ProjectCustomerDetails" />
+  <EntityRelationship Name="cr6e8_ProjectCustomerDetails_CustomerName_cr6e8_CustomerProducts" />
+  <EntityRelationship Name="lk_cr6e8_customerproducts_createdby" />
+  <EntityRelationship Name="lk_cr6e8_customerproducts_modifiedby" />
+  <EntityRelationship Name="lk_cr6e8_projectcustomerdetails_createdby" />
+  <EntityRelationship Name="lk_cr6e8_projectcustomerdetails_modifiedby" />
+  <EntityRelationship Name="owner_cr6e8_customerproducts" />
+  <EntityRelationship Name="owner_cr6e8_projectcustomerdetails" />
+  <EntityRelationship Name="team_cr6e8_customerproducts" />
+  <EntityRelationship Name="team_cr6e8_projectcustomerdetails" />
+  <EntityRelationship Name="user_cr6e8_customerproducts" />
+  <EntityRelationship Name="user_cr6e8_projectcustomerdetails" />
+</EntityRelationships>

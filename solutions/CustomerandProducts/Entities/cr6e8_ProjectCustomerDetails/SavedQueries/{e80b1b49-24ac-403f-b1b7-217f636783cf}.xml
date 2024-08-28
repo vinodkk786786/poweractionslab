@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{e80b1b49-24ac-403f-b1b7-217f636783cf}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr6e8_customername" select="1" icon="1" preview="1">
+        <row name="result" id="cr6e8_projectcustomerdetailsid">
+          <cell name="cr6e8_customername" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr6e8_projectcustomerdetails">
+          <attribute name="cr6e8_projectcustomerdetailsid" />
+          <attribute name="cr6e8_customername" />
+          <attribute name="createdon" />
+          <order attribute="cr6e8_customername" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Project Customer Details" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>
